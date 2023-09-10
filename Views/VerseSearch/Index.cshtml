@@ -1,0 +1,34 @@
+﻿<style>
+    .bible_h1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        padding-top:10%;
+    }
+
+    .bible_body_h2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+    }
+
+</style>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<body style="background-image: url(https://www.creativefabrica.com/wp-content/uploads/2022/12/12/Fantasy-Dreamlike-Stairway-To-Bright-Heavenly-Stairs-Made-Of-Clouds-51711657-1.png); 
+            background-size:cover;
+            border-top:solid black 2px;">
+<h1 class="bible_h1"style="position:center">Welcome to the virtual Bible Verse Search!</h1>
+<img class="bible_body_h2" src="https://www.kingjamesbibleonline.org/images/king-james-bible.webp"/>
+
+<div >
+    <form asp-action="SearchForm" style="text-align:center">
+        Use this application to search for Bible verses  <input  type="submit" value="Begin" class="btn btn-danger" />
+    </form>
+</div>
+</body>
